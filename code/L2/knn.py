@@ -1,4 +1,9 @@
+
+# http://vision.stanford.edu/teaching/cs231n-demos/
+
 import numpy as np
+
+# With N examples, training time O(1), prediction time O(N)
 
 class NearestNeighbor:
     def __init__(self):
@@ -25,3 +30,5 @@ class NearestNeighbor:
             Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
 
         return Ypred
+
+# k = 1, 3, 5, ...
